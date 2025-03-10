@@ -9,5 +9,4 @@ import com.graphql.graphql.model.User;
 
 @Repository
 public interface UserRepository extends MongoRepository<User, String> {
-    Optional<User> findByEmail(String email); // Custom query method
-}
+    Optional<User> findByEmail(String email); }

@@ -1,5 +1,7 @@
 package com.graphql.graphql.model;
 
+import java.util.List;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -16,5 +18,7 @@ public class User {
     private String id;
     private String email;
     private String name;
+
+    private List<String> roles;
 
 }
